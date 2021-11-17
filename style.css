@@ -1,0 +1,64 @@
+/*Css reset**/
+*{
+    font-family: var(--font-texto);
+    padding: 0;
+    margin: 0;
+    box-sizing: unset;
+    /*background-color: var(--cor--fundo) ;
+    color: var(--cor-texto)*/
+}
+/*Css reset**/
+#img_header{
+    width: 200px;
+    height: 100px;
+}
+header{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/    
+    background-color:cornflowerblue;
+    min-height: 50px;
+    flex-wrap: wrap;
+
+}
+#menu-principal
+{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/    
+    background-color:darkseagreen;
+    min-height: 25%;
+    width: 100%;
+}
+#menu-principal ul /*Afeta o <ul> que está dentro do menu principal*/
+{
+    list-style: none;/* Tira a decoração dos itens da lista */
+    display: flex;/*Container flex - todos os itens filhos na horizontal por padrão*/
+}
+#menu-principal ul li
+{
+    height: 36px;
+    margin: 0 10px; /* 0 topo fundo; 10px esquerda e direita*/
+    display: flex;
+}
+#menu-principal ul li a
+{
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block; /*Exibe como bloco em linha*/
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color:chocolate;
+    text-decoration: none; /*Sem sublinhado*/
+    background-color:darkseagreen;
+    transition: 300ms; /*Afeta a velocidade dos efeitos do hover*/
+}
+#menu-principal ul li a:hover /*Quando o mouso passa sobre o link do menu*/
+{
+    filter: brightness(0.8); 
+    /*Filtro que escurece a cor do item (cor de frente + cor de fundo)
+        brightness < 1: escurece
+        brightness > 1: clareia
+    */
+}
